@@ -6,11 +6,11 @@ const HALF_LIFE_PERIOD= 5730;
 
 module.exports = function dateSample(sampleActivity) {
 
-  if (typeof sampleActivity != "string")  {
+  if (typeof sampleActivity != 'string')  {
     return false;
   } else if (sampleActivity < 0) { 
     return false;
-  } else if (sampleActivity === "") {
+  } else if (sampleActivity === '') {
     return false;
   } else if (sampleActivity != [0-9]) {
     return false;
